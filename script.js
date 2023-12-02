@@ -8,6 +8,7 @@ class Product {
         this.productName = name;
         this.productPrice = price;
         const container = document.createElement("div");
+        container.className = "card";
         container.innerHTML = 
         `
         <img src = "${this.imgLink}">
@@ -16,8 +17,11 @@ class Product {
         <button>Купить</button>
         `
         document.body.append(container);
+        console.log(333);
     }
 
 }
 
-new Product ("link","name",100);
+new Product();
+new Product ("https://www.oma.by/upload/iblock/7a5/7a5b02cc06895ef075375fe58f70c782.jpg","колесо",100);
+new Product ("https://www.oma.by/upload/iblock/7a5/7a5b02cc06895ef075375fe58f70c782.jpg","колесо",100);
